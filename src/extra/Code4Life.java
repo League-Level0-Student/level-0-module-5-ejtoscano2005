@@ -15,20 +15,26 @@ import javax.swing.JOptionPane;
 
 public class Code4Life {
 public static void main(String[] args) {
-	
+		
 
 	// 1. Ask the user how many hours they spent coding this week.
 	String a = JOptionPane.showInputDialog("How many hours have you spent coding this week?");
-	int a = Integer.parseInt(a);
+	int b = Integer.parseInt(a);
 	// 2. If it is less than or equal to 2, tell them to stop watching YouTube and
 	// write code instead.
-if(a <= 2){
-	JOptionPane.showMessageDialog(null,"Stop watchin YouTube and write code instead");
+if(b <= 2){
+	JOptionPane.showMessageDialog(null,"Stop watching YouTube and write code instead");
 }
 	// 3. If it is greater than or equal to 3 AND less than or equal to 5, tell them
 	// they're a Code Ninja
-
+if(b >= 3 && b<=5){ 
+	JOptionPane.showMessageDialog(null,"You are a code ninja");
+}
 	// 4. If it is more than 5, call the method below to play the Batman theme song.
+if(b>5){ 
+	playBatmanTheme();
+
+}
 }
 	private static void playBatmanTheme() {
 		try {
